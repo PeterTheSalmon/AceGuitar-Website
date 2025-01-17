@@ -31,17 +31,21 @@
     z-index: 1;
 }
 
+.store-buttons {
+    display: flex;
+    justify-content: center;
+}
+
 .store-button {
+    display: inline-block;
     background: black;
     color: white;
-    padding: 18px 28px;
+    padding: 20px 48px;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
     position: relative;
     overflow: hidden;
     transition: color 0.3s ease;
+    text-decoration: none;
 }
 
 .store-button::before {
@@ -60,27 +64,10 @@
     height: 100%;
 }
 
-.store-button>* {
+.store-button .app-text {
     position: relative;
     z-index: 1;
-}
-
-.store-button svg {
-    width: 32px;
-    height: 32px;
-    fill: currentColor;
-    flex-shrink: 0;
-}
-
-.store-button div {
-    text-align: left;
-}
-
-.store-button .store-text {
-    font-size: 15px;
-    opacity: 0.8;
-}
-
-.store-button .app-text {
     font-size: 24px;
+    font-weight: 500;
+    display: block;
 }

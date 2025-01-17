@@ -108,7 +108,7 @@
 }
 
 .screenshot:nth-child(1) {
-    transform: translateX(-45%) scale(0.85);
+    transform: translateX(-65%) scale(0.85);
     z-index: 1;
 }
 
@@ -118,6 +118,6 @@
 }
 
 .screenshot:nth-child(3) {
-    transform: translateX(45%) scale(0.85);
+    transform: translateX(65%) scale(0.85);
     z-index: 1;
 }
