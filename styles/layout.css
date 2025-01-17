@@ -1,0 +1,67 @@
+.page {
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#first-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: #FBFBFB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#second-page {
+    background-color: #33333C;
+    color: white;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    z-index: 2;
+}
+
+.hero-text {
+    padding-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text .title {
+    font-size: clamp(28px, 4.5vw, 56px);
+}
+
+.hero-text .subtitle {
+    font-weight: 500;
+    white-space: nowrap;
+    color: #33333C;
+}
+
+.hero-text .brand {
+    font-weight: 600;
+    color: #3F8B68;
+    font-size: clamp(60px, 8vw, 120px);
+}
+
+.store-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.screenshots {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.screenshot {
+    height: 300px;
+    border-radius: 12px;
+}
