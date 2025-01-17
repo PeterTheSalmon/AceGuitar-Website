@@ -69,6 +69,11 @@
     width: 32px;
     height: 32px;
     fill: currentColor;
+    flex-shrink: 0;
+}
+
+.store-button div {
+    text-align: left;
 }
 
 .store-button .store-text {
