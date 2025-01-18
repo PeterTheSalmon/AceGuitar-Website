@@ -83,7 +83,8 @@
 .hero-text .brand {
     font-weight: 600;
     color: #3F8B68;
-    font-size: clamp(72px, 8vw, 160px);
+    font-size: clamp(72px, 7vw, 140px);
+    /* max-width: 90%; */
     white-space: nowrap;
     opacity: 0;
     animation: fadeSlideUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
@@ -93,19 +94,19 @@
     font-weight: 500;
     white-space: nowrap;
     color: #33333C;
-    font-size: clamp(36px, 4vw, 72px);
-    max-width: 90%;
+    font-size: clamp(36px, 3vw, 72px);
+    /* max-width: 80%; */
     opacity: 0;
     animation: fadeSlideUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
 }
 
 .app-description {
-    width: min(100%, calc(clamp(72px, 8vw, 160px) * 6));
+    width: min(100%, calc(clamp(72px, 6.5vw, 160px) * 6));
     margin: 20px auto 0;
     color: #666;
     text-align: center;
     line-height: 1.8;
-    font-size: clamp(16px, 2vw, 28px);
+    font-size: clamp(16px, 1.5vw, 28px);
     opacity: 0;
     animation: fadeSlideUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
 }
