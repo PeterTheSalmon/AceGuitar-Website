@@ -10,6 +10,42 @@
     overflow: hidden;
 }
 
+@keyframes shine {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        left: 200%;
+        opacity: 0;
+    }
+}
+
+.nav-button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -100%;
+    width: 60%;
+    height: 200%;
+    background: linear-gradient(to right,
+            transparent,
+            rgba(255, 255, 255, 0.5),
+            transparent);
+    transform: rotate(25deg);
+    animation: shine 4s infinite;
+    pointer-events: none;
+}
+
 .nav-button::before {
     content: '';
     position: absolute;
