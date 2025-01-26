@@ -1,6 +1,7 @@
 html,
 body {
     overscroll-behavior: none;
+    overflow-x: hidden;
 }
 
 @keyframes fadeSlideUp {
@@ -57,7 +58,6 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    z-index: -1;
 }
 
 #second-page {
@@ -66,11 +66,138 @@ body {
     min-height: 100vh;
     margin-top: 100vh;
     padding-top: 90px;
+    position: relative;
+    z-index: 1;
     /* Add padding to account for navbar */
 }
 
 #third-page {
     background-color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px max(40px, 5vw);
+    position: relative;
+    z-index: 1;
+}
+
+.cta-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: max(60px, min(8vw, 120px));
+    max-width: 1800px;
+    width: 100%;
+    align-items: center;
+    animation: fadeScale 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+    opacity: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.cta-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-image img {
+    width: 100%;
+    max-width: min(600px, 40vw);
+    height: auto;
+    filter: drop-shadow(0 20px 40px rgb(130, 130, 130));
+    transition: transform 0.3s ease;
+}
+
+.cta-image img:hover {
+    transform: translateY(-10px);
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cta-content h2 {
+    font-size: clamp(36px, 4vw, 72px);
+    font-weight: 500;
+    color: #33333C;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.cta-content p {
+    font-size: clamp(16px, 1.5vw, 24px);
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+    max-width: 600px;
+}
+
+.cta-content .store-buttons {
+    margin-top: clamp(20px, 3vw, 40px);
+    display: flex;
+    gap: clamp(16px, 2vw, 24px);
+    justify-content: flex-start;
+}
+
+.cta-content .store-button {
+    display: flex;
+    align-items: center;
+    gap: clamp(12px, 1vw, 16px);
+    padding: clamp(12px, 1.5vw, 20px) clamp(24px, 2vw, 32px);
+}
+
+.cta-content .store-button img {
+    height: clamp(24px, 2vw, 32px);
+    width: auto;
+    filter: invert(1);
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content .store-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content .store-label {
+    font-size: clamp(14px, 1vw, 16px);
+    opacity: 0.8;
+}
+
+.cta-content .store-name {
+    font-size: clamp(20px, 1.5vw, 24px);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .cta-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .cta-content {
+        align-items: center;
+    }
+
+    .cta-content .store-buttons {
+        justify-content: center;
+    }
+
+    .cta-image {
+        order: -1;
+    }
+
+    .cta-image img {
+        max-width: 300px;
+    }
 }
 
 .hero-text {
@@ -129,6 +256,8 @@ body {
     justify-content: center;
     opacity: 0;
     animation: fadeSlideUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+    position: relative;
+    z-index: 1;
 }
 
 @media (max-width: 600px) {
@@ -185,6 +314,8 @@ body {
     background-color: #33333C;
     color: white;
     padding: 60px 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .footer-content {
