@@ -11,6 +11,43 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        .content h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .content ul {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .effective-date {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .content strong {
+            font-weight: 600;
+        }
+
+        .content h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.5rem 0 1rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,8 +59,136 @@
     </nav>
 
     <div class="page" style="padding-top: 90px; min-height: calc(100vh - 90px);">
-        <div class="section-header">
-            <h1>Privacy Policy</h1>
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <h1 style="color: #3F8B68; font-size: 5rem; font-weight: 600; margin-bottom: 1rem;">Privacy Policy</h1>
+            <p class="effective-date"><strong>Effective as of January 26th, 2025</strong></p>
+
+            <div class="content">
+                <p>AceGuitar ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy
+                    explains how we collect, use, and safeguard your information when you use our app.</p>
+
+                <p>We reserve the right to amend this Privacy Policy at any time without prior individual notice. The
+                    date on which this Privacy Policy was last updated is shown above. If material changes are made, we
+                    may notify account holders via email or provide an in-app notification. By continuing to use
+                    AceGuitar after amendments are posted, you accept the revised policy.</p>
+
+                <h2>What Personal Information Do We Collect?</h2>
+                <p>We only collect the data that is necessary to improve your experience with AceGuitar.</p>
+
+                <h3>Account Data</h3>
+                <p>Creating an account is optional. If you choose to create an account, we collect:</p>
+                <ul>
+                    <li>Email address</li>
+                </ul>
+                <p>In addition, we may collect:</p>
+                <ul>
+                    <li>Full name</li>
+                    <li>Date and time of account creation</li>
+                </ul>
+                <p>If you choose to upload your Projects created in AceGuitar, your data will be stored in a secure
+                    Firebase Firestore database tied to your account. Projects can also be created and stored locally on
+                    your device without an account. These local Projects are not accessible to us and remain entirely
+                    under your control.</p>
+                <p>We collect this data to allow you to login, recover your account, and access your Projects across
+                    devices.</p>
+
+                <h3>Feedback Data</h3>
+                <p>If you choose to send feedback from within AceGuitar, the feedback will not be linked to your
+                    personal identity. However, personal data may be shared if you choose to include a screenshot or
+                    your email with your feedback. You may opt out of including these items to ensure no data is shared.
+                </p>
+
+                <h3>Usage Data</h3>
+                <p>We collect anonymized usage data via Google Analytics and Firebase Crashlytics to understand how the
+                    app is used, improve performance, and reduce crashes. This data does not identify you personally.
+                </p>
+                <p>We do not sell or share personal information with third parties. However:</p>
+                <ul>
+                    <li>Firebase services (Authentication, Analytics, Crashlytics) may process your data as part of
+                        their functionality</li>
+                    <li>Google Analytics gathers anonymous metrics about user behavior within the app</li>
+                </ul>
+                <p>Please refer to Firebase Privacy Policy for more details on their data handling practices.</p>
+                <p>The Apple App Store and Google Play Store may collect anonymized download and usage data. Their
+                    specific data collection practices are governed by their own privacy policies, which you can consult
+                    separately for more information.</p>
+
+                <h2>Users Under 13</h2>
+                <p>AceGuitar is intended solely for users aged 13 years and older. We do not knowingly collect personal
+                    information from anyone under the age of 13. If we become aware that personal information has been
+                    collected from someone under this age without verifiable parental consent, we will delete it
+                    promptly.</p>
+                <p>If you believe a user under the age of 13 has created an account in violation of this policy, please
+                    contact us using the details below so we can investigate and take appropriate action.</p>
+                <p>By using AceGuitar or creating an account within our app, you confirm that you are at least 13 years
+                    old.</p>
+
+                <h2>Data Security</h2>
+                <p>We take reasonable precautions to protect your data, leveraging Firebase's security measures.
+                    However, no method of data transmission over the internet can guarantee complete security.</p>
+                <p>If you are located outside the United States, please note that your personal information—including
+                    project data—is transferred to, processed, and stored on servers located in the United States. By
+                    using AceGuitar, you acknowledge these transfers and consent to processing under U.S. law, which may
+                    differ from the laws in your country of residence.</p>
+                <p>If any security breach occurs, we will notify affected users promptly as required by applicable laws.
+                </p>
+                <p>We may also disclose your information to government or law enforcement agencies if required by law or
+                    legal process.</p>
+
+                <h2>Data Retention</h2>
+                <p>Your personal information and Projects are retained only as long as necessary to provide you with
+                    AceGuitar services. If you delete your account:</p>
+                <ul>
+                    <li>Personal information (email, name) will be permanently deleted</li>
+                    <li>Projects stored in Firebase will be removed</li>
+                    <li>Anonymous analytics data cannot be deleted as it contains no identifying information and is used
+                        solely for improving app performance</li>
+                </ul>
+
+                <h2>Third-Party Links</h2>
+                <p>AceGuitar may contain links to external websites or services. This Privacy Policy applies only to
+                    AceGuitar. We are not responsible for the privacy practices of external sites.</p>
+
+                <h2>Your Rights</h2>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access your personal data at any time by contacting us</li>
+                    <li>Request deletion of your account and associated data, either through in-app account deletion
+                        functionality or by contacting us</li>
+                    <li>Object to future amendments to this policy by ceasing your use of the app</li>
+                </ul>
+
+                <h2>Account Termination</h2>
+                <p>We reserve the right to terminate or suspend accounts that violate our terms of service (<a
+                        href="/terms" style="color: #3F8B68; text-decoration: none;">aceguitar.app/terms</a>) or this
+                    privacy policy. In such cases, we will notify you via the email address associated with your
+                    account.</p>
+
+                <h2>Changes to this Policy</h2>
+                <p>We may update our Privacy Policy on occasion due to operational changes or evolving legal
+                    requirements. We ask that you periodically check the date and review this Privacy Policy for the
+                    latest information on our privacy practices. Continued use after amendments constitutes acceptance
+                    of the updated policy.</p>
+                <p>The most up-to-date version will always be posted at <a href="/privacy"
+                        style="color: #3F8B68; text-decoration: none;">aceguitar.app/privacy</a>.</p>
+
+                <h2>Contacting Us</h2>
+                <p>If you have any questions, concerns, or requests relating to our handling of your personal
+                    information, please direct them to the contact information listed below. We may need to ask you for
+                    personal information to verify your identity. In most cases, we aim to respond to privacy-related
+                    inquiries within 5 business days.</p>
+
+                <p><strong>By Email</strong></p>
+                <p><a href="mailto:support@aceguitar.app"
+                        style="color: #3F8B68; text-decoration: none;">support@aceguitar.app</a></p>
+
+                <p><strong>By Post</strong></p>
+                <p>Peter Salmon<br>
+                    PO Box 5571<br>
+                    Victoria PO 9<br>
+                    British Columbia, Canada<br>
+                    V8S 1C4</p>
+            </div>
         </div>
     </div>
 
