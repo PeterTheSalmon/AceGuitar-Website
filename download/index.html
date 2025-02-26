@@ -2,78 +2,116 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download - AceGuitar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="../styles/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download - AceGuitar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="../styles/main.css">
+  <style>
+    .download-flex {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .download-content {
+      flex: 1;
+      padding: 1rem;
+      max-width: 800px;
+    }
+
+    @media (max-width: 768px) {
+      .download-flex {
+        flex-direction: column;
+      }
+    }
+
+    /* Override store-button style to shrink buttons */
+    .store-button {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="/" class="logo">AceGuitar</a>
-        <a href="/download" class="nav-button">
-            <span>Get the App</span>
-        </a>
-    </nav>
+  <nav class="navbar">
+    <a href="/" class="logo">AceGuitar</a>
+    <a href="/download" class="nav-button">
+      <span>Get the App</span>
+    </a>
+  </nav>
 
-    <div class="page" style="padding-top: 90px; min-height: calc(100vh - 90px);">
-        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-            <h1 style="color: #3F8B68; font-size: 5rem; font-weight: 600; margin-bottom: 1rem;">Get the App</h1>
-            <p style="font-size: 1.5rem; margin-bottom: 2rem;">Get the app on your favorite platform.</p>
-
-            <div class="store-buttons">
+  <div class="page" style="padding-top: 90px; min-height: calc(100vh - 90px);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+      <div class="download-flex">
+        <div class="download-content">
+          <div class="cta-container">
+            <div class="cta-content" style="text-align: center;">
+              <h1 style="color: #3F8B68; 
+              font-size: 5rem; 
+              font-weight: 600; 
+              margin-bottom: 1rem;">Download AceGuitar</h1>
+              <p style="font-size: 1.5rem; margin-bottom: 2rem;">Get the app on your favorite platform.</p>
+              <div class="store-buttons"
+                style="margin-top: 20px; display: flex; gap: 16px; justify-content: flex-start;">
                 <a href="#" class="store-button">
-                    <img src="../Assets/Store Logos/App Store.svg" alt="App Store icon">
-                    <div class="store-text">
-                        <span class="store-label">Download on the</span>
-                        <span class="store-name">App Store</span>
-                    </div>
+                  <img src="../Assets/Store Logos/App Store.svg" alt="App Store icon">
+                  <div class="store-text">
+                    <span class="store-label">Download on the</span>
+                    <span class="store-name">App Store</span>
+                  </div>
                 </a>
                 <a href="#" class="store-button">
-                    <img src="../Assets/Store Logos/Play Store.svg" alt="Play Store icon">
-                    <div class="store-text">
-                        <span class="store-label">Get it on</span>
-                        <span class="store-name">Google Play</span>
-                    </div>
+                  <img src="../Assets/Store Logos/Play Store.svg" alt="Play Store icon">
+                  <div class="store-text">
+                    <span class="store-label">Get it on</span>
+                    <span class="store-name">Google Play</span>
+                  </div>
                 </a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-column">
-                <h4>AceGuitar</h4>
-                <ul>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                    <li><a href="/terms">Terms</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Resources</h4>
-                <ul>
-                    <li><a href="/brand">Brand Assets</a></li>
-                    <li><a href="https://petersalmon.dev" target="_blank">More from Peter</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Get the App</h4>
-                <ul>
-                    <li><a href="#">Download from the App Store</a></li>
-                    <li><a href="#">Get it on Google Play</a></li>
-                </ul>
-            </div>
-            <div class="footer-copyright">
-                © 2025 Peter Salmon. All rights reserved.
-            </div>
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>AceGuitar</h4>
+        <ul>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/brand">Brand Assets</a></li>
+          <li><a href="https://petersalmon.dev" target="_blank">More from Peter</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Get the App</h4>
+        <ul>
+          <li><a href="#">Download from the App Store</a></li>
+          <li><a href="#">Get it on Google Play</a></li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        © 2025 Peter Salmon. All rights reserved.
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
