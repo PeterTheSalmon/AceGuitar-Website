@@ -61,14 +61,13 @@ body {
 }
 
 #second-page {
-    background-color: #33333C;
-    color: white;
+    background-color: #F7F7F7;
+    color: #33333C;
     min-height: 100vh;
     margin-top: 100vh;
     padding-top: 90px;
     position: relative;
     z-index: 1;
-    /* Add padding to account for navbar */
 }
 
 #third-page {
@@ -91,11 +90,11 @@ body {
     text-align: center;
 }
 
-
 .cta-content {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    align-items: center;
 }
 
 .cta-content h2 {
@@ -118,7 +117,7 @@ body {
     margin-top: clamp(20px, 3vw, 40px);
     display: flex;
     gap: clamp(16px, 2vw, 24px);
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .cta-content .store-button {
@@ -155,14 +154,6 @@ body {
     font-weight: 500;
 }
 
-.cta-content {
-    align-items: center;
-}
-
-.cta-content .store-buttons {
-    justify-content: center;
-}
-
 .hero-text {
     text-align: center;
     display: flex;
@@ -185,7 +176,6 @@ body {
     font-weight: 600;
     color: #3F8B68;
     font-size: clamp(72px, 7vw, 140px);
-    /* max-width: 90%; */
     white-space: nowrap;
     opacity: 0;
     animation: fadeSlideUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
@@ -196,7 +186,6 @@ body {
     white-space: nowrap;
     color: #33333C;
     font-size: clamp(36px, 3vw, 72px);
-    /* max-width: 80%; */
     opacity: 0;
     animation: fadeSlideUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
 }
@@ -255,6 +244,7 @@ body {
     width: auto;
     object-fit: contain;
     border-radius: 12px;
+    filter: drop-shadow(0 10px 30px rgba(9, 9, 9, 0.4));
 }
 
 .screenshot:nth-child(1) {
@@ -364,75 +354,121 @@ body {
 }
 
 .features-grid {
-    display: grid;
-    gap: 30px;
-    padding: 60px max(20px, 10%);
+    display: flex;
+    gap: 32px;
+    padding: 80px max(20px, 10%);
     max-width: 1400px;
     margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-    /* Default to 3 columns */
 }
 
-@media (max-width: 1200px) {
-    .features-grid {
-        grid-template-columns: repeat(2, 1fr);
-        /* Switch to 2 columns */
-    }
-}
-
-@media (max-width: 768px) {
-    .features-grid {
-        grid-template-columns: 1fr;
-        /* Single column for mobile */
-        padding: 40px 20px;
-    }
+.features-left,
+.features-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .feature-card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    padding: 30px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding: 64px;
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeScale 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
     opacity: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Left column - tall, short, medium */
+.features-left .feature-card:nth-child(1) {
+    min-height: 600px;
+}
+
+.features-left .feature-card:nth-child(2) {
+    min-height: 280px;
+}
+
+.features-left .feature-card:nth-child(3) {
+    min-height: 400px;
+}
+
+/* Right column - medium, tall, short */
+.features-right .feature-card:nth-child(1) {
+    min-height: 400px;
+}
+
+.features-right .feature-card:nth-child(2) {
+    min-height: 600px;
+}
+
+.features-right .feature-card:nth-child(3) {
+    min-height: 280px;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .feature-card h3 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 500;
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
     color: #3F8B68;
 }
 
 .feature-card p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     margin: 0;
     opacity: 0.9;
+    flex-grow: 1;
 }
 
 .feature-card .feature-image {
-    margin-top: 20px;
+    margin-top: 32px;
 }
 
 .feature-card .material-symbols-outlined {
-    font-size: 48px;
+    font-size: 56px;
     color: #3F8B68;
 }
 
 @media (max-width: 768px) {
     .features-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .features-left,
+    .features-right {
+        gap: 30px;
     }
 
     .feature-card {
-        padding: 25px;
+        padding: 32px;
+        min-height: auto !important;
+    }
+
+    .feature-card h3 {
+        font-size: 24px;
+        margin: 0 0 16px 0;
+    }
+
+    .feature-card p {
+        font-size: 16px;
+    }
+
+    .feature-card .feature-image {
+        margin-top: 24px;
+    }
+
+    .feature-card .material-symbols-outlined {
+        font-size: 48px;
     }
 }
