@@ -455,3 +455,11 @@ body {
         padding: 10px;
     }
 }
+
+/* Page title styling for subpages */
+.page-title {
+    color: #3F8B68;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
