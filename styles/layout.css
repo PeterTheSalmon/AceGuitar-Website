@@ -333,6 +333,32 @@ body {
         margin-top: 30px;
         padding-top: 15px;
     }
+
+    .hero-text .brand {
+        font-size: 60px;
+        /* Reduced from clamp(72px, 7vw, 140px) */
+    }
+
+    .hero-text .subtitle {
+        font-size: 30px;
+        /* Reduced from clamp(36px, 3vw, 72px) */
+    }
+
+    .app-description {
+        font-size: 18px;
+        /* Increased from clamp(16px, 1.5vw, 28px) for mobile */
+        line-height: 1.4;
+        /* Reduced from 1.8 */
+    }
+
+    .screenshot:nth-child(1),
+    .screenshot:nth-child(3) {
+        display: none;
+    }
+
+    .screenshot:nth-child(2) {
+        transform: translateX(0) scale(1);
+    }
 }
 
 .section-header {
