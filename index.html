@@ -31,7 +31,7 @@
                 play.
             </p>
             <div class="store-buttons">
-                <a href="#" class="store-button">
+                <a href="#" id="download-button" class="store-button">
                     <span class="app-text">Download Now</span>
                 </a>
             </div>
@@ -154,6 +154,20 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            var downloadButton = document.getElementById('download-button');
+
+            if (/android/i.test(userAgent)) {
+                downloadButton.href = 'https://play.google.com/store/apps/details?id=com.aceguitar';
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                downloadButton.href = 'https://apps.apple.com/us/app/aceguitar/id123456789';
+            } else {
+                downloadButton.href = '/download';
+            }
+        });
+    </script>
 </body>
 
 </html>

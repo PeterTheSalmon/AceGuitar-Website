@@ -59,10 +59,11 @@ body {
 }
 
 #second-page {
-    background-color: #EAEAEB;
+    background-color: #ececec;
     min-height: 100vh;
     margin-top: 0;
     padding-top: 40px;
+    padding-bottom: 60px;
     position: relative;
     z-index: 1;
     /* Add padding to account for navbar */
@@ -377,7 +378,8 @@ body {
     font-size: clamp(50px, 4.5vw, 85px);
     font-weight: 700;
     margin: 0 0 20px 0;
-    color: #383838;
+    /* color: #383838; */
+    color: #3c8563;
 }
 
 /* Mobile version */
@@ -400,7 +402,7 @@ body {
     flex-direction: row;
     gap: 30px;
     padding: 20px 0px;
-    max-width: max(1000px, 40%);
+    max-width: max(900px, 40%);
     margin: 0 auto;
 }
 
