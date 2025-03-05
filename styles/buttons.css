@@ -84,18 +84,7 @@
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
-    .store-button {
-        padding: 16px 28px;
-        /* Reduced from 20px 48px */
-        border-radius: 10px;
-    }
 
-    .store-button .app-text {
-        font-size: 16px;
-        /* Reduced from 24px */
-    }
-}
 
 .store-button::before {
     content: '';
@@ -119,4 +108,17 @@
     font-size: 24px;
     font-weight: 500;
     display: block;
+}
+
+@media (max-width: 768px) {
+    .store-button {
+        padding: 16px 28px;
+        /* Reduced from 20px 48px */
+        border-radius: 10px;
+    }
+
+    .store-button .app-text {
+        font-size: 20px;
+        /* Reduced from 24px */
+    }
 }
