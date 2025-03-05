@@ -375,7 +375,7 @@ body {
 
 /* Desktop version */
 .section-header h1 {
-    font-size: clamp(50px, 4.5vw, 85px);
+    font-size: clamp(60px, 4.5vw, 85px);
     font-weight: 700;
     margin: 0 0 20px 0;
     /* color: #383838; */
@@ -385,7 +385,8 @@ body {
 /* Mobile version */
 @media (max-width: 768px) {
     .section-header h1 {
-        font-size: 9vw;
+        font-size: clamp(40px, 45px, 60px);
+        margin-top: -20px;
     }
 }
 
