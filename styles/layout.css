@@ -427,36 +427,36 @@ body {
         display: flex;
         flex-direction: column;
         max-width: 100%;
-        gap: 10px;
+        gap: 30px;
     }
 }
 
 .feature-card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
+    /* background: #ffffff00; */
+    border-radius: 22px;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease;
     animation: fadeScale 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
     opacity: 0;
+    box-shadow: 1px 1px 3px 0px #33333C33;
 }
 
-.feature-card .feature-image {
-    margin-top: 20px;
-}
+
 
 .feature-card img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: inherit;
+    transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .feature-card {
-        padding: 10px;
-    }
+.feature-card:hover img {
+    transform: scale(1.01);
 }
+
+
 
 /* Page title styling for subpages */
 .page-title {
