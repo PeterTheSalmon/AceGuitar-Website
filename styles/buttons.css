@@ -122,3 +122,15 @@
         /* Reduced from 24px */
     }
 }
+
+.store-button-disabled {
+    background-color: #555555;
+    /* Darker Grey */
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.store-button-disabled:hover::before {
+    height: 0;
+}

@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar">
         <a href="#" class="logo">AceGuitar</a>
-        <a href="/download" class="nav-button">
+        <a href="#" id="navbar-download-button" class="nav-button">
             <span>Get the App</span>
         </a>
     </nav>
@@ -145,8 +145,9 @@
             <div class="footer-column">
                 <h4>Get the App</h4>
                 <ul>
-                    <li><a href="#">Download from the App Store</a></li>
-                    <li><a href="#">Get it on Google Play</a></li>
+                    <li><a href="https://apps.apple.com/us/app/aceguitar-learn-play/id6739484277" target="_blank"
+                            rel="noopener noreferrer">Download from the App Store</a></li>
+                    <li><em style="color: white; opacity: 0.8; font-style: italic;">Coming soon to Google Play</em></li>
                 </ul>
             </div>
             <div class="footer-copyright">
@@ -154,20 +155,8 @@
             </div>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            var downloadButton = document.getElementById('download-button');
+    <script src="scripts/platform-links.js" defer></script>
 
-            if (/android/i.test(userAgent)) {
-                downloadButton.href = 'https://play.google.com/store/apps/details?id=com.aceguitar';
-            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                downloadButton.href = 'https://apps.apple.com/us/app/aceguitar/id123456789';
-            } else {
-                downloadButton.href = '/download';
-            }
-        });
-    </script>
 </body>
 
 </html>
