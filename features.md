@@ -1,17 +1,23 @@
 # Tuner
-- Tune up your guitar in seconds
+Tune in Seconds
+Get perfect pitch with precise, real-time feedback.
 
 # Metronome
-- Keep in time, tap out a tempo, or practice with tempo acceleration
+Keep Perfect Time
+Stay on beat in any time signature — or just tap the tempo you need. 
 
 # Chord Search
-- Figure out the name of that chord you're playing — and other chords that might fit
+Play it. Find it.
+Find what you are playing — and other ways to play. 
 
 # Chord Library
-- Browse and listen to over 10000 chords and variations
+Learn Any Chord
+Discover more than 10,000 chords in the Chord Library.
 
 # Fretboard Explorer
-- View and hear every note on the fretboard — in any tuning
+Explore the Fretboard
+Listen to every note, in any tuning.
 
 # Projects
-- Write and save tabs, chords, and lyrics in an intuitive editor
+Save Your Music
+Save your chords and tabs with an intuitive and powerful editor.
